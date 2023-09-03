@@ -61,6 +61,7 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  outline: none;
 }
 
 .button {
@@ -415,10 +416,12 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: 2px solid #000000;
   box-sizing: border-box;
+  outline: none;
 }
 
 .appointment-item input:focus {
   border-color: #663d15;
+  outline: none;
 }
 
 .appointment .button {
@@ -539,6 +542,7 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
   color: #663d15;
+  outline: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -549,6 +553,7 @@ input[type="radio"].visually-hidden {
   width: 16px;
   height: 16px;
   border: 2px solid #000000;
+  outline: none;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -561,6 +566,7 @@ input[type="radio"].visually-hidden {
   background-image: url(/svg/cross.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  outline: none;
 }
 
 .filter-input-radio + label::before {
@@ -572,6 +578,7 @@ input[type="radio"].visually-hidden {
   height: 16px;
   border: 2px solid #000000;
   border-radius: 50%;
+  outline: none;
 }
 
 .filter-input-radio:checked + label::after {
@@ -583,11 +590,13 @@ input[type="radio"].visually-hidden {
   height: 8px;
   background-color: #000000;
   border-radius: 50%;
+  outline: none;
 }
 
 .filter-input:hover + label,
 .filter-input:focus + label {
   color: #663d15;
+  outline: none;
 }
 
 .filter-input:focus + label::before,
@@ -595,6 +604,7 @@ input[type="radio"].visually-hidden {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
 .filter-input:disabled + label,
@@ -605,6 +615,7 @@ input[type="radio"].visually-hidden {
 
   opacity: 0.5;
   pointer-events: none;
+  outline: none;
 }
 
 .filter-button {
@@ -1239,6 +1250,37 @@ input[type="radio"].visually-hidden {
   transform: rotate(-45deg);
 }
 
+.modal-close-map {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close-map::before,
+.modal-close-map::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+}
+
+.modal-close-map::before {
+  transform: rotate(45deg);
+}
+
+.modal-close-map::after {
+  transform: rotate(-45deg);
+}
+
 .modal-login h2 {
   margin: 0;
   margin-bottom: 20px;
@@ -1267,10 +1309,12 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #f9f6f3;
   border: 2px solid #000000;
+  outline: none;
 }
 
 .login-form input[type="text"]:focus {
   border-color: #663d15;
+  outline: none;
 }
 
 .login-form .login-help {
@@ -1310,12 +1354,14 @@ input[type="radio"].visually-hidden {
   width: 17px;
   height: 17px;
   border: 2px solid #000000;
+  outline: none;
 }
 
 .login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
@@ -1327,6 +1373,7 @@ input[type="radio"].visually-hidden {
   width: 15px;
   height: 2px;
   background-color: #000000;
+  outline: none;
 }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
@@ -1367,6 +1414,11 @@ input[type="radio"].visually-hidden {
 .modal-map p {
   margin: 0;
 }
+
+.iframe-map {
+  position: absolute;
+}
+
 /**************************************************************/
 
 /***********************item logo************************************/
